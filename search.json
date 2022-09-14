@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Scientist Portfolio",
+    "section": "",
+    "text": "See items here"
+  },
+  {
+    "objectID": "portfolio_posts/auto-x-ml/index.html",
+    "href": "portfolio_posts/auto-x-ml/index.html",
+    "title": "Auto- & Explainable- ML",
+    "section": "",
+    "text": "A cross-platform application of auto-ML and explainable-ML to investigate to what extent they might be compatible\nSee more here"
+  },
+  {
+    "objectID": "portfolio_posts/sentiment-analysis-comparison/index.html",
+    "href": "portfolio_posts/sentiment-analysis-comparison/index.html",
+    "title": "Sentiment Analysis Comparison",
+    "section": "",
+    "text": "vader compound sentiment scores and the classification obtained from Hugging Face’s cardiffnlp/twitter-xlm-roberta-base-sentiment transformer model are compared.\nSee more here"
+  },
+  {
+    "objectID": "portfolio_posts/causal-segmentation/index.html",
+    "href": "portfolio_posts/causal-segmentation/index.html",
+    "title": "Causal segmentation",
+    "section": "",
+    "text": "Expecting homogeneous effects from experimental treatments might border on naivety sometimes. Especially, if we have large samples in A/B testing. This project is an implementation of Netflix’s sherlock on a convenient sample of German voters.\nSee more here"
+  },
+  {
+    "objectID": "portfolio_posts/covid-attitudes-voting-intention/index.html",
+    "href": "portfolio_posts/covid-attitudes-voting-intention/index.html",
+    "title": "Attitudes towards COVID-19 and voting intention in Germany",
+    "section": "",
+    "text": "The project uncovers subgroups of voters in Germany utilizing their beliefs towards the effectiveness of government measures, reported compliance with a possible curfew, and trust in various institutions during the early stages of the Corona pandemic. The uncovered segments of voters predict their voting intentions with acceptable accuracy.\nSee more here"
+  },
+  {
+    "objectID": "portfolio_posts/movie-recommender/index.html",
+    "href": "portfolio_posts/movie-recommender/index.html",
+    "title": "Recommender system",
+    "section": "",
+    "text": "Together with Pietro Passarella, we built a movie recommender with a web interface utilizing the small movielens dataset.\nSee more here"
+  },
+  {
+    "objectID": "portfolio_posts/time-series/index.html",
+    "href": "portfolio_posts/time-series/index.html",
+    "title": "Time series",
+    "section": "",
+    "text": "Google offers Google trends topics – a group of already clustered search terms that share the same concept or entity.\nSearch terms underpinning five interrelated ideologies pulled from Google Trends topics data are examined to understand the best way to model the trends and relationships.\nSee more here"
+  },
+  {
+    "objectID": "portfolio_posts/measuring-organizational-practices/index.html",
+    "href": "portfolio_posts/measuring-organizational-practices/index.html",
+    "title": "Measuring organizational practices",
+    "section": "",
+    "text": "What started as the boot camp graduation project turned into a mature product that assesses organizational culture from both employee reviews and company mission and vision statements.\n\nThe product helps to understand\n\nthe gap between a company’s desired and actual culture\nwhere the company stands in comparison to industry averages\n\nSee the initial version here, contact me directly for more info on the more mature version."
+  },
+  {
+    "objectID": "portfolio_posts/docker-data-pipeline/index.html",
+    "href": "portfolio_posts/docker-data-pipeline/index.html",
+    "title": "Tweet stream data pipeline for a Slackbot",
+    "section": "",
+    "text": "An implementation of a dockerized data pipeline that sends randomized tweets about politics together with their sentiment scores\nThe Docker-Compose pipeline includes five containers.\n\ncollects tweets with the Twitter API and tweepy\nstores the tweets in a MongoDB\napplies an ETL job that\n\nextracts the tweets from MongoDB\ngets the sentiments of the texts with VADERSentiment\n\nloads the tweets and their sentiment scores in a Postgres database\ncreates a Slackbot that post a randomly selected anonymized tweet from the Postgres database into a Slack channel.\n\nSee more here"
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "portfolio",
+    "section": "",
+    "text": "R\n\n\npython\n\n\nh2o\n\n\ndalex\n\n\nauto-ML\n\n\nexplainable-ML\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\npython\n\n\nR\n\n\nHugging Face\n\n\ntransformers\n\n\nvader\n\n\nsentiment analysis\n\n\nbot detection\n\n\nnatural language processing\n\n\nexplainable-ML\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nR\n\n\nsherlock\n\n\nsl3\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nR\n\n\ntidyverse\n\n\ntidymodels\n\n\npsychometrics\n\n\nlatent class analysis\n\n\nlatent profile analysis\n\n\nmachine learning\n\n\ndeep learning\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\npython\n\n\nflask\n\n\nsurprise\n\n\nrecommender system\n\n\nunsupervised ML\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nR\n\n\ngtrends\n\n\ntime series\n\n\nEDA\n\n\ndynamic linear modeling\n\n\nmachine learning\n\n\ndeep learning\n\n\ngluonts\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\npython\n\n\nR\n\n\ndictionary development\n\n\nnatural language processing\n\n\ntopic modeling\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\npython\n\n\ndocker\n\n\ntwitter API\n\n\nMongoDB\n\n\netl\n\n\nvader\n\n\nsentiment analysis\n\n\nPostgreSQL\n\n\nslack bot\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+  }
+]
