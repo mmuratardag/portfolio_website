@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -80,18 +80,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../portfolio.html">portfolio</a>
+    <a class="nav-link" href="../../portfolio.html">
+ <span class="menu-text">portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://mmuratardag.github.io">Go to Data Scientist website</a>
+    <a class="nav-link" href="https://mmuratardag.github.io"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Go to Data Scientist website</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://mmuratardag.github.io/academic_website">Go to Academic website</a>
+    <a class="nav-link" href="https://mmuratardag.github.io/academic_website"><i class="bi bi-mortarboard" role="img">
+</i> 
+ <span class="menu-text">Go to Academic website</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/mmuratardag"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -106,6 +111,9 @@ ul.task-list li input[type="checkbox"] {
       <h1 class="title">Measuring organizational practices</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">python</div>
+                <div class="quarto-category">Hugging Face</div>
+                <div class="quarto-category">transformers</div>
+                <div class="quarto-category">torch</div>
                 <div class="quarto-category">R</div>
                 <div class="quarto-category">dictionary development</div>
                 <div class="quarto-category">natural language processing</div>
@@ -118,6 +126,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta">
 
       
+    
       
     </div>
     
@@ -132,6 +141,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="deprecated.." class="level3">
+<h3 class="anchored" data-anchor-id="deprecated..">Deprecated!..</h3>
+<section id="i-no-longer-update-or-customize-this-measurement-instrument.-please-see-roberta-orgculture-classifier-as-the-alternative." class="level4">
+<h4 class="anchored" data-anchor-id="i-no-longer-update-or-customize-this-measurement-instrument.-please-see-roberta-orgculture-classifier-as-the-alternative.">I no longer update or customize this measurement instrument. Please see <a href="https://huggingface.co/MMADS/RoBERTa-OrgCulture-Classifier" target="_blank">RoBERTa-OrgCulture-Classifier</a> as the alternative.</h4>
 <p>Measurement instrument for text data</p>
 <p>What started as the boot camp graduation project turned into a mature product that assesses organizational culture from both employee reviews and company mission and vision statements.</p>
 <p><img src="screen_capture_industry.gif" class="img-fluid"></p>
@@ -143,6 +156,8 @@ ul.task-list li input[type="checkbox"] {
 <p>See the initial version <a href="https://github.com/mmuratardag/DS_SpA_W12_Measuring_Organizational_Practices" target="_blank">here</a>, contact me directly for more info on the more mature version.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -186,7 +201,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -222,24 +254,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
