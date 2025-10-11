@@ -2,22 +2,22 @@
   {
     "listing": "/portfolio.html",
     "items": [
-      "/portfolio_posts/auto-x-ml/index.html",
+      "/portfolio_posts/CS_edu_C2_simulator/index.html",
+      "/portfolio_posts/cve-decoder/index.html",
+      "/portfolio_posts/academic_omega_webapp/index.html",
+      "/portfolio_posts/causal-ml/index.html",
+      "/portfolio_posts/so_ai_developer_profiler_2024/index.html",
+      "/portfolio_posts/cv-deepface/index.html",
+      "/portfolio_posts/d3js-sankey-diagram/index.html",
+      "/portfolio_posts/moral-foundations/index.html",
       "/portfolio_posts/sentiment-analysis-comparison/index.html",
       "/portfolio_posts/causal-segmentation/index.html",
+      "/portfolio_posts/auto-x-ml/index.html",
+      "/portfolio_posts/time-series/index.html",
       "/portfolio_posts/covid-attitudes-voting-intention/index.html",
       "/portfolio_posts/movie-recommender/index.html",
-      "/portfolio_posts/time-series/index.html",
       "/portfolio_posts/measuring-organizational-practices/index.html",
-      "/portfolio_posts/docker-data-pipeline/index.html",
-      "/portfolio_posts/d3js-sankey-diagram/index.html",
-      "/portfolio_posts/cv-deepface/index.html",
-      "/portfolio_posts/moral-foundations/index.html",
-      "/portfolio_posts/so_ai_developer_profiler_2024/index.html",
-      "/portfolio_posts/causal-ml/index.html",
-      "/portfolio_posts/academic_omega_webapp/index.html",
-      "/portfolio_posts/cve-decoder/index.html",
-      "/portfolio_posts/CS_edu_C2_simulator/index.html"
+      "/portfolio_posts/docker-data-pipeline/index.html"
     ]
   }
 ]
